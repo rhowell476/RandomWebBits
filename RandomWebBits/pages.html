@@ -29,7 +29,7 @@
                     <h3>Domain Availability</h3>
                     <p>Check an available domain using WhoIS API search</p>
                 </div>
-                <a href="pages/domainlookup.html"><button class="btn btn--primary">Go to Page</button></a>
+                <a href="pages/domainlookup.html">Go to Page</a>
             </div>
             <div class="card">
                 <img src="img/einstein.jpg" alt="BOINC Einstein@home">
@@ -37,7 +37,7 @@
                     <h3>Einstein@home</h3>
                     <p class="card-subtitle mb-2 text-muted">Idle computer time calculations. Contribute to search for pulsar stars in the universe.</p>
                 </div>
-                <button class="btn btn--primary">Go to Page</button>
+                <a href="pages/domainlookup.html">Go to Page</a>
             </div>
             <div class="card">
                 <img src="img/nasa.jpg" alt="NASA Artemis Logo">
@@ -45,7 +45,7 @@
                     <h3>NASA</h3>
                     <h6 class="card-subtitle mb-2 text-muted">NASA's Unity webpage</h6>
                 </div>
-                <button class="btn btn--primary">Go to Page</button>
+                <a href="pages/domainlookup.html">Go to Page</a>
             </div>
         </div>
     </section>
@@ -55,15 +55,6 @@
     <footer>
     <p>&copy;2022 Random WebBits. All Rights Reserved.</p>
     </footer>
-
-<!-- Search Bar, WHOIS API-->
-<script type="text/javascript">
-    document.getElementById('searchWhoIS').onsubmit = function() {
-        var URL = 'https://www.whois.com/whois/' + document.getElementById('txtSearch').value;
-        window.open(URL, '_blank');
-        return false;
-    }
-</script>
     
 </body>
 </html>
