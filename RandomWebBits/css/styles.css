@@ -44,18 +44,23 @@ h1, h2, h3, h4, h5, h6 { color: #2A85A3
 }
 
 
-a { outline: none;
+nav a { outline: none;
     text-decoration: none;
 }
 
-a:hover { color: #400074
+nav a:focus { border: 3px solid #f8f8f8;
+    padding: .1em;
 }
 
-a:focus { border: 3px solid #f8f8f8
+nav a:visited { opacity: 80%;
+    color: lightblue;
 }
 
-a:hover { opacity: 80%
+nav a:hover { opacity: 80%;
+    color: darkcyan;
 }
+
+
 
 time{ font-weight: bold;
     font-size: .8em;
@@ -85,12 +90,6 @@ nav li a { text-decoration: none;
 .Title {text-align: center
 }
 
-.example {background-color: #ADD8E6;
-    padding: 0.5em 1em 0.5em 1em;
-    margin: 0 auto;
-    border: solid 2px;
-    max-width: 55%}
-
 .monospace { font-family: monospace, serif
 }
 
@@ -115,9 +114,59 @@ input[type=text], button { padding: .3em;
 #TryWhoIsReturn { background-color: #FFC0CB
 }
 
-.wrapper { margin-bottom: 4em;
+.WebBits { margin-bottom: 8em;
     margin-top: 2em;
 }
+
+.WebBits a {
+    font-weight: bold;
+}
+
+.WebBits a:focus {
+    border: 3px solid orange;
+    outline: none;
+    padding: .1em;
+}
+
+.WebBits a:link {
+    color: darkcyan;
+}
+
+.WebBits a:visited {
+    color: darkgreen;
+}
+
+.WebBits a:hover {
+    color: #32466D;
+}
+
+
+.exampleBlue { 
+    background-color: #ADD8E6;
+    padding: 0.5em 1em 0.5em 1em;
+    margin: 0 auto;
+    border: solid 2px;
+    max-width: 55%
+}
+
+.examplePink {background-color: #FFC0CB;
+    padding: 0.5em 1em 0.5em 1em;
+    margin: 0 auto;
+    border: solid 2px;
+    max-width: 55%}
+
+.examplePink h3 { margin-top: 0;}
+
+.redbold { font-weight: bolder;
+    color: red;
+}
+
+aside ul { line-height: 1em;
+    font-size: .9em;
+    font-family: Arial, sans-serif;
+}
+
+aside li { list-style-type: none;}
 
 /* CARDS*/
 
