@@ -11,7 +11,7 @@ Pink: #FFC0CB
 
 */
 
-
+/* HTML tag styles */
 main{ width: 80%;
     margin: 0 auto 12vh auto
 }
@@ -43,7 +43,7 @@ img { max-width: 100%
 h1, h2, h3, h4, h5, h6 { color: #2A85A3
 }
 
-
+/* Navigation and header styles */
 nav a { outline: none;
     text-decoration: none;
 }
@@ -58,12 +58,6 @@ nav a:visited { opacity: 80%;
 
 nav a:hover { opacity: 80%;
     color: darkcyan;
-}
-
-
-
-time{ font-weight: bold;
-    font-size: .8em;
 }
 
 #ArbitraryWebBits { color: #1D2A2E;
@@ -86,90 +80,11 @@ nav li a { text-decoration: none;
     font-size: 1.4em;
 }
 
-/* Pages Styles */
-.Title {text-align: center
+/* Home Pages Styles */
+.Title { text-align: center
 }
 
-.monospace { font-family: monospace, serif
-}
-
-input { width: 14em
-}
-
-input[type=text], button { padding: .3em;
-    font-size: .8em;
-}
-
-#TryWhoIs button { font-family: lato, sans-serif;
-    font-weight: bold;
-    background-color: #f5893a;
-    color: #FFFFFF;
-    width: 7em;
-}
-
-.search-container { max-width: 100%;
-    padding: 1em;
-}
-
-#TryWhoIsReturn { background-color: #FFC0CB
-}
-
-.WebBits { margin-bottom: 8em;
-    margin-top: 2em;
-}
-
-.WebBits a {
-    font-weight: bold;
-}
-
-.WebBits a:focus {
-    border: 3px solid orange;
-    outline: none;
-    padding: .1em;
-}
-
-.WebBits a:link {
-    color: darkcyan;
-}
-
-.WebBits a:visited {
-    color: darkgreen;
-}
-
-.WebBits a:hover {
-    color: #32466D;
-}
-
-
-.exampleBlue { 
-    background-color: #ADD8E6;
-    padding: 0.5em 1em 0.5em 1em;
-    margin: 0 auto;
-    border: solid 2px;
-    max-width: 55%
-}
-
-.examplePink {background-color: #FFC0CB;
-    padding: 0.5em 1em 0.5em 1em;
-    margin: 0 auto;
-    border: solid 2px;
-    max-width: 55%}
-
-.examplePink h3 { margin-top: 0;}
-
-.redbold { font-weight: bolder;
-    color: red;
-}
-
-aside ul { line-height: 1em;
-    font-size: .9em;
-    font-family: Arial, sans-serif;
-}
-
-aside li { list-style-type: none;}
-
-/* CARDS*/
-
+/* CARDS - Home and Pages */
 .cards h2{ text-align: center
 }
 
@@ -224,4 +139,82 @@ aside li { list-style-type: none;}
 .cards a:hover{ transition: background-color 400ms;
     background-color: silver;
     color: #400074;
+}
+
+/* Page Styles */
+time{ font-weight: bold;
+    font-size: .8em;
+}
+
+.WebBits { margin-bottom: 8em;
+    margin-top: 2em;
+}
+
+.WebBits a { font-weight: bold;
+}
+
+.WebBits a:focus { border: 3px solid orange;
+    outline: none;
+    padding: .1em;
+}
+
+.WebBits a:link { color: darkcyan;
+}
+
+.WebBits a:visited { color: darkgreen;
+}
+
+.WebBits a:hover { color: #32466D;
+}
+
+.exampleBlue { background-color: #ADD8E6;
+    padding: 0.5em 1em 0.5em 1em;
+    margin: 0 auto;
+    border: solid 2px;
+    max-width: 55%
+}
+
+.examplePink {background-color: #FFC0CB;
+    padding: 0.5em 1em 0.5em 1em;
+    margin: 0 auto;
+    border: solid 2px;
+    max-width: 55%}
+
+.examplePink h3 { margin-top: 0;
+}
+
+.redbold { font-weight: bolder;
+    color: red;
+}
+
+aside ul { line-height: 1em;
+    font-size: .9em;
+    font-family: Arial, sans-serif;
+}
+
+aside li { list-style-type: none;
+}
+
+.monospace { font-family: monospace, serif
+}
+
+input { width: 14em
+}
+
+input[type=text], button { padding: .3em;
+    font-size: .8em;
+}
+
+#TryWhoIs button { font-family: lato, sans-serif;
+    font-weight: bold;
+    background-color: #f5893a;
+    color: #FFFFFF;
+    width: 7em;
+}
+
+.search-container { max-width: 100%;
+    padding: 1em;
+}
+
+#TryWhoIsReturn { background-color: #FFC0CB
 }
