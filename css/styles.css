@@ -178,10 +178,10 @@ time{ font-weight: bold;
 }
 
 .examplePink { background-color: #FFC0CB;
-    padding: 0.5em 1em 0.5em 1em;
+    padding: 0.5em 0.5em 0.5em 0.5em;
     margin: 0 auto;
     border: solid 2px;
-    max-width: 55%}
+}
 
 .examplePink h3 { margin-top: 0;
 }
@@ -190,13 +190,20 @@ time{ font-weight: bold;
     color: red;
 }
 
-aside ul { line-height: 1em;
+aside p { padding: 0;}
+
+aside ul { 
+    line-height: 1em;
     font-size: .9em;
     font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 aside li { list-style-type: none;
 }
+
+aside li a { font-size: 14px;}
 
 .monospace { font-family: monospace, serif
 }
@@ -228,12 +235,26 @@ article p { width: 80%;
 }
 
 article img { display: block;
-    margin: 2em auto;
+    height: auto;
+    margin: auto;
 }
 
-article iframe { width: 90%; 
-    height: 83vh;
-    margin: .5em auto 4em auto;
+#NASA { display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.NASA-frame-link { padding: 1.4em;
+    background-color: #000000;
+    margin-bottom: 4em;
+    width: 100%
+}
+
+.NASA-frame-link:hover { background-color: #00AA00;
+}
+
+article iframe { width: 100%; 
+    height: 80vh;
     display: block;
 }
 
@@ -244,17 +265,43 @@ article iframe { width: 90%;
 #NASA-links li{ margin-top: 1em;
     font-size: 1.3em;
 }
+
 #NASA-links li a { text-decoration: none;}
 
 #NASA-links li a:hover { color: skyblue;}
 
+@media only screen and (min-width: 350px){
+    aside ul { padding-left: 1em;
+        padding-right: 1em;
+    }
+    
+    aside li a { font-size: 16px;
+    }
+    
+    .examplePink { max-width: 30em;}
+}
 
-@media only screen and (min-width: 1280px) {
-    article iframe{ max-width: 50em;
+@media only screen and (min-width: 750px){
+    .examplePink { padding: 0.5em 1em 0.5em 1em;
+        max-width: 35em;
+    }
+    
+    aside ul { margin: 1em;
+    }
+    
+    aside p { text-align: left;
+    }
+    
+    .NASA-frame-link {
+        max-width: 90%;
     }
 }
 
 @media only screen and (min-width: 1280px) {
+    .NASA-frame-link {
+        max-width: 80%;
+    }
+    
     main{ max-width: 84.375em;
     margin: 0 auto 12vh auto;
     }
