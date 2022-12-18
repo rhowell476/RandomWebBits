@@ -8,12 +8,15 @@ Blue: #2A85A3
 Title: #1D2A2E
 Lightblue: #ADD8E6
 Pink: #FFC0CB
+Cyan: #008B8B
+DarkCyan: #006363
 
 */
 
 /* HTML tag styles */
 main{ width: 80%;
-    margin: 0 auto 12vh auto
+    max-width: 50em;
+    margin: 5% auto 12vh auto
 }
 
 body { font-family: Lato, sans-serif;
@@ -40,7 +43,7 @@ footer { background-color: #081020;
 img { max-width: 100%
 }
 
-h1, h2, h3, h4, h5, h6 { color: #2A85A3
+h1, h2, h3, h4, h5, h6 { color: #2A85A3;
 }
 
 /* Navigation and header styles */
@@ -93,7 +96,7 @@ nav li a { text-decoration: none;
     flex-direction: row;
     justify-content: center;
     max-width: 1100px;
-    margin: 0 auto;
+    margin: 0 auto 8em auto;
 }
 
 .card-columns .card { width: 12em
@@ -158,10 +161,10 @@ time{ font-weight: bold;
     padding: .1em;
 }
 
-.WebBits a:link { color: darkcyan;
+.WebBits a:link { color: #008B8B;
 }
 
-.WebBits a:visited { color: darkgreen;
+.WebBits a:visited { color: #006363;
 }
 
 .WebBits a:hover { color: #32466D;
@@ -174,7 +177,7 @@ time{ font-weight: bold;
     max-width: 55%
 }
 
-.examplePink {background-color: #FFC0CB;
+.examplePink { background-color: #FFC0CB;
     padding: 0.5em 1em 0.5em 1em;
     margin: 0 auto;
     border: solid 2px;
@@ -196,9 +199,6 @@ aside li { list-style-type: none;
 }
 
 .monospace { font-family: monospace, serif
-}
-
-input { width: 14em
 }
 
 input[type=text], button { padding: .3em;
@@ -225,4 +225,38 @@ input[type=text], button { padding: .3em;
 article p { width: 80%;
     margin-left: auto;
     margin-right: auto;
+}
+
+article img { display: block;
+    width: 90%;
+    margin: 2em auto;
+}
+
+article iframe { width: 90%; 
+    height: 83vh;
+    margin: .5em auto 4em auto;
+    display: block;
+}
+
+#NASA > h3 { text-align: center;
+    margin: 1em 0 0;
+}
+
+#NASA-links li{ margin-top: 1em;
+    font-size: 1.3em;
+}
+#NASA-links li a { text-decoration: none;}
+
+#NASA-links li a:hover { color: skyblue;}
+
+
+@media only screen and (min-width: 1280px) {
+    article iframe{ max-width: 50em;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    main{ max-width: 84.375em;
+    margin: 0 auto 12vh auto;
+    }
 }
