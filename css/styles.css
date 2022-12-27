@@ -147,7 +147,13 @@ nav li a { text-decoration: none;
 }
 
 /************************* Page Styles *************************/
-#HTTPS figure { margin: 0 auto;}
+#HTTPS figure { margin: 0 auto;
+}
+
+#HTTPS figure:not(:last-of-type) { 
+    padding-top: 2em;
+    padding-bottom: 1em;
+}
 
 figcaption { font-size: 12px;
     font-style: italic;
@@ -268,7 +274,6 @@ article iframe { width: 100%;
 }
 
 #NASA iframe, #NASA img { border: 1em solid #2A85A3;
-    max-width: 50em;
     border-radius: 6.65em;
     margin: 0 auto;
 }
@@ -353,5 +358,9 @@ time{ font-weight: bold;
         margin: 0 auto 12vh auto;
     }
     
-    #Instructions figure { width: 45em;}
+    #NASA iframe, #NASA img { max-width: 50em;
+    }
+    
+    #Instructions figure { width: 45em;
+    }
 }
