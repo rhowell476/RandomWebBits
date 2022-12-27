@@ -147,6 +147,7 @@ nav li a { text-decoration: none;
 }
 
 /************************* Page Styles *************************/
+#HTTPS figure { margin: 0 auto;}
 
 figcaption { font-size: 12px;
     font-style: italic;
@@ -299,9 +300,10 @@ time{ font-weight: bold;
 
 .exampleBlue { background-color: #ADD8E6;
     padding: 0.5em 1em 0.5em 1em;
-    margin: 0 auto;
+    margin: 1em auto;
     border: solid 2px;
-    max-width: 55%
+    max-width: 55%;
+    font-size: 14px;
 }
 
 .exampleBlue p, .examplePink p { width: 100%;
@@ -330,11 +332,12 @@ time{ font-weight: bold;
 }
 
 @media only screen and (min-width: 750px){
-    .examplePink { padding: 1em 2em 1em 2em;
+    .examplePink, .exampleBlue { font-size: 1em;
         max-width: 35em;
     }
     
-    .exampleBlue { padding: 1em 2em 1em 2em;}
+    .examplePink, .exampleBlue { padding: 1em 2em 1em 2em;
+    }
     
     aside ul { margin: 1em;
     }
@@ -350,5 +353,5 @@ time{ font-weight: bold;
         margin: 0 auto 12vh auto;
     }
     
-    #Instructions img { width: 45em;}
+    #Instructions figure { width: 45em;}
 }
