@@ -16,10 +16,13 @@ DarkCyan: #006363
 /* HTML tag styles */
 * { box-sizing: border-box}
 
-main{ width: 80%;
+main{ width: 100%;
     max-width: 50em;
-    margin: 5% auto 12vh auto
+    margin-top: 5%;
+    margin-bottom: 12vh;
 }
+
+main > div { padding: 2em;}
 
 body { font-family: Lato, sans-serif;
     background-color: #FDFDFD;
@@ -89,6 +92,9 @@ nav li a { text-decoration: none;
 .Title { text-align: center
 }
 
+h2:first-child { font-size: 2.5em;
+}
+
 /* CARDS - Home and Pages */
 .cards h2{ text-align: center
 }
@@ -101,19 +107,33 @@ nav li a { text-decoration: none;
     margin: 0 auto 8em auto;
 }
 
-.card_columns .card { width: 12em
+.card_columns .card { width: 100%;
 }
 
-.card { padding: 1em;
-    margin: 0.5em 1em;
+
+.card div:first-child {width: 100%; 
+    height: auto;
+}
+
+.card > div > img { height: 100%;
+    border: 1px solid #0A0A0A;
+    object-fit: contain;
+}
+
+.card { margin: 2em 0;
+    padding-bottom: 3em;
     background: rgba(248, 248, 248, 0.08);
-    border: 2px solid #0a0a0a;
+    border: 2px solid #0A0A0A;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    box-shadow: 0 10px 15px 0px #0A0A0A;
+    text-align: center;
 }
+
+
 
 .card .card_body { padding: 1em 0;
     margin: 0 auto;
@@ -124,7 +144,7 @@ nav li a { text-decoration: none;
     margin: 0;
 }
 
-.card_img { border: 1px solid #0a0a0a
+.card_img { border: 1px solid #0A0A0A
 }
 
 /* Buttons */
@@ -137,7 +157,7 @@ nav li a { text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 1px;
     line-height: 1.2;
-    border: 1px solid #0a0a0a;
+    border: 1px solid #0A0A0A;
     border-radius: 10px;
 }
 
@@ -325,7 +345,20 @@ time{ font-weight: bold;
 .examplePink h3 { margin-top: 0;
 }
 
-@media only screen and (min-width: 350px){
+/* Styles for small mobile */
+@media only screen and (max-width: 319px){
+    main {padding: 1em;}
+    
+    
+}
+@media only screen and (max-width: 500px){
+    .card:first-of-type{ margin-top: 0; 
+    }
+}
+
+
+/* Styles for mobile */
+@media only screen and (min-width: 320px){
     aside ul { padding-left: 1em;
         padding-right: 1em;
     }
@@ -333,10 +366,16 @@ time{ font-weight: bold;
     aside li a { font-size: 16px;
     }
     
-    .examplePink { max-width: 30em;}
+    .examplePink { max-width: 30em;
+    }
+    
+    .card_columns { padding-left: 1.5em;
+        padding-right: 1.5em;
+    }
 }
 
-@media only screen and (min-width: 750px){
+/* Styles for tablet */
+@media only screen and (min-width: 501px){
     .examplePink, .exampleBlue { font-size: 1em;
         max-width: 35em;
     }
@@ -350,17 +389,39 @@ time{ font-weight: bold;
     aside p { text-align: left;
     }
     
+    .card_columns .card { width: 40%;
+    }
+    
+    .card_columns { padding: 0;
+    }
+    
+    .card {margin: 1.2em 1em;
+    }
 }
 
-@media only screen and (min-width: 1280px) {
+
+/* Styles for desktop */
+@media only screen and (min-width: 769px) {
     
     main{ max-width: 84.375em;
-        margin: 0 auto 12vh auto;
     }
     
     #NASA iframe, #NASA img { max-width: 50em;
     }
     
     #Instructions figure { width: 45em;
+    }
+    
+    .card_columns .card { width: 28%;
+    }
+    .card {margin: 1.2em 1em;
+    }
+}
+
+/* Styles for large desktop */
+@media only screen and (min-width: 1280px) {
+    
+    main{ max-width: 84.375em;
+        margin: 0 auto;
     }
 }

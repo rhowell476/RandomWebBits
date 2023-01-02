@@ -21,12 +21,15 @@ const AAs = ArbitraryArticles.map((article) => {
     let ArbitraryArticle = document.createElement("div");
     ArbitraryArticle.classList.add("card");
     const cardContent = `
-        <img src="${article.cardImage}" alt="${article.cardImageALT}">
+        <div>
+            <img src="${article.cardImage}" alt="${article.cardImageALT}">
+        </div>
         <div class="card-body">
             <h3>${article.name}</h3>
             <p>${article.description}</p>
+            <a href="${article.articleLink}">Go to Page</a>
         </div>
-        <a href="${article.articleLink}">Go to Page</a>
+        
     `;
     ArbitraryArticle.innerHTML = cardContent;
 
