@@ -14,5 +14,5 @@ Hosted on GitHub Pages: https://rhowell476.github.io/RandomWebBits/
 - A newer web development practice for me: JavaScript.  
 - I added the "home" and "pages" cards as WebBit components. They're rendered to the page using JS to add the card's HTML to the DOM.  
 
-## Articles  
+### Articles  
 - Fun bits of knowledge you may/may not know or have seen before.  
