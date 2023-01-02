@@ -26,7 +26,7 @@
                         <input id="txtSearch" type="text" placeholder="Enter a domain name..." class="monospace">
                     </form>
                     <!-- Search Bar, WHOIS API-->
-                    <script type="text/javascript" defer>
+                    <script type="text/javascript">
                         document.getElementById('searchWhoIS').onsubmit = function() {
                             var URL = 'https://www.whois.com/whois/' + document.getElementById('txtSearch').value;
                             window.open(URL, '_blank');
