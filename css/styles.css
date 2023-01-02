@@ -16,14 +16,6 @@ DarkCyan: #006363
 /* HTML tag styles */
 * { box-sizing: border-box}
 
-main{ width: 100%;
-    max-width: 50em;
-    margin-top: 5%;
-    margin-bottom: 12vh;
-}
-
-main > div { padding: 2em;}
-
 body { font-family: Lato, sans-serif;
     background-color: #FDFDFD;
     color: #4A4848;
@@ -44,6 +36,16 @@ footer { background-color: #081020;
     left: 0;
     bottom: 0;
 }
+
+main{ width: 100%;
+    max-width: 50em;
+    margin-top: 5%;
+    margin-bottom: 12vh;
+    padding-left: 3em;
+    padding-right: 3em;
+}
+
+
 
 img { max-width: 100%
 }
@@ -377,7 +379,6 @@ time{ font-weight: bold;
 /* Styles for tablet */
 @media only screen and (min-width: 501px){
     .examplePink, .exampleBlue { font-size: 1em;
-        max-width: 35em;
     }
     
     .examplePink, .exampleBlue { padding: 1em 2em 1em 2em;
@@ -396,6 +397,9 @@ time{ font-weight: bold;
     }
     
     .card {margin: 1.2em 1em;
+    }
+    .wrapper { max-width: 30em;
+        margin: 0 auto;
     }
 }
 
@@ -416,6 +420,11 @@ time{ font-weight: bold;
     }
     .card {margin: 1.2em 1em;
     }
+    
+    .wrapper { max-width: 43.0625em;
+        margin: 0 auto;
+    }
+
 }
 
 /* Styles for large desktop */
