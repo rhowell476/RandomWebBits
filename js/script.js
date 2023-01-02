@@ -4,8 +4,8 @@
 //Create site header and navigation elements
 const siteHeader = document.createElement("header");
 const navContent = `
-    <li><a href="/index.html">Home</a>&nbsp;|&nbsp;</li>
-    <li><a href="/pages.html">Pages</a>&nbsp;|</li>
+    <li><a href="/RandomWebBits/index.html">Home</a>&nbsp;|&nbsp;</li>
+    <li><a href="/RandomWebBits/pages.html">Pages</a>&nbsp;|</li>
 `;
 const headerNav = document.createElement("nav");
 const headerUL = document.createElement("ul");
