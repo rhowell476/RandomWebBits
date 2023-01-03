@@ -47,7 +47,18 @@ const Article04 = new WebBit (
     "Cursor selecting HTTPS certificate"
 );
 
+const Article05 = new WebBit (
+    "webTech",
+    5,
+    "Wappalyzer",
+    "Wappalyzer browser extension",
+    "January 2, 2023",
+    "pages/webTech.html",
+    "img/wappalyzer-logo.png",
+    "Browser extension logo. A white w on a purple tile."
+);
 
-const ArbitraryArticles = [Article01, Article02, Article03, Article04];
+
+const ArbitraryArticles = [Article01, Article05, Article03, Article04, Article02];
 
 export default ArbitraryArticles;

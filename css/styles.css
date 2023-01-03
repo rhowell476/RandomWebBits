@@ -48,9 +48,9 @@ footer { background-color: #081020;
 main{ width: 100%;
     max-width: 50em;
     margin-top: 5%;
-    margin-bottom: 12vh;
     padding-left: 3em;
     padding-right: 3em;
+    padding-bottom: 12vh;
 }
 
 img { max-width: 100%
@@ -179,9 +179,6 @@ h2:first-child { font-size: 2.5em;
 }
 
 /************************* Page Styles *************************/
-time{ font-weight: bold;
-    font-size: .8em;
-}
 
 .WebBits { margin-bottom: 5em;
     margin-top: 2em;
@@ -195,7 +192,7 @@ time{ font-weight: bold;
     padding: .1em;
 }
 
-.WebBits > a:link { color: #2A8BB8;
+.WebBits a:link { color: #2A8BB8;
 }
 
 .WebBits a:visited { color: #081020;
@@ -203,6 +200,18 @@ time{ font-weight: bold;
 
 .WebBits a:hover { color: #32466D;
 }
+#webTech .exampleBlue ul { padding: 0;
+    text-align: left;
+}
+.examplePink.webTech a { color: #32466D;
+}
+
+#webTech .exampleBlue li { margin: .4em 0;}
+
+time{ font-weight: bold;
+    font-size: .8em;
+}
+
 
 #HTTPS figure { margin: 0 auto;
 }
@@ -342,7 +351,7 @@ article iframe { width: 100%;
     font-size: 14px;
 }
 
-.exampleBlue p, .examplePink p { width: 100%;
+.exampleBlue p, .examplePink p, .exampleBlue ul { width: 100%;
     margin: 0;
     text-align: center;
 }
@@ -395,6 +404,8 @@ article iframe { width: 100%;
     }
     
     .examplePink, .exampleBlue { padding: 1em 2em 1em 2em;
+        margin-top: 2em;
+        margin-bottom: 2em;
     }
     
     aside ul { margin: 1em;
@@ -437,8 +448,13 @@ article iframe { width: 100%;
     .wrapper { max-width: 43.0625em;
         margin: 0 auto;
     }
+    
+    #HTTPS figure { width: 100%
+    }
 
 }
+
+
 
 /* Styles for large desktop */
 @media only screen and (min-width: 1280px) {
