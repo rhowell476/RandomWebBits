@@ -24,7 +24,7 @@ const AAs = ArbitraryArticles.map((article) => {
         <div>
             <img src="${article.cardImage}" alt="${article.cardImageALT}">
         </div>
-        <div class="card-body">
+        <div class="card_body">
             <h3>${article.name}</h3>
             <p>${article.description}</p>
             <a href="${article.articleLink}">Go to Page</a>
